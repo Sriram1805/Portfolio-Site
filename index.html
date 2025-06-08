@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriram R - Portfolio Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Sriram R</div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <button class="nav-link" data-target="home">Home</button>
+                <button class="nav-link" data-target="about">About</button>
+                <button class="nav-link" data-target="education">Education</button>
+                <button class="nav-link" data-target="projects">Projects</button>
+                <button class="nav-link" data-target="skills">Skills</button>
+                <button class="nav-link" data-target="contact">Contact</button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu">
+            <button class="nav-link mobile" data-target="home">Home</button>
+            <button class="nav-link mobile" data-target="about">About</button>
+            <button class="nav-link mobile" data-target="education">Education</button>
+            <button class="nav-link mobile" data-target="projects">Projects</button>
+            <button class="nav-link mobile" data-target="skills">Skills</button>
+            <button class="nav-link mobile" data-target="contact">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Background decorations -->
+        <div class="bg-decorations">
+            <div class="decoration decoration-1"></div>
+            <div class="decoration decoration-2"></div>
+            <div class="decoration decoration-3"></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Text Content -->
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">
+                        Sriram R<span class="accent">.</span>
+                    </h1>
+                    <h2 class="hero-title">
+                        Full Stack Developer & Web Designer
+                    </h2>
+                </div>
+
+                <p class="hero-description">
+                    Experience designer and developer remotely from Chennai.
+                    A passionate B.Tech CSE student crafting scalable solutions with clean,
+                    user-centric design.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+
+                    <button class="btn btn-outline" onclick="window.open('./assets/Sriram_Resume.pdf', '_blank')">
+                        <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        Download CV
+                    </button>
+
+
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://github.com/Sriram1805" target="_blank" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sriram-r-aa75992a0/" target="_blank" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <!--a href="#" class="social-link">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.174l10.19 7.64 10.19-7.64h.174c.904 0 1.636.732 1.636 1.636z" />
+                        </svg>
+                    </a-->
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-ring">
+                        <div class="profile-inner">
+                            <img src="./assets/Sriram pro.png" alt="Sriram R" class="profile-img">
+                        </div>
+                    </div>
+                    <div class="profile-badge">Developer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        Hi, I'm Sriram R! From the bustling streets of Chennai, I dive deep into the realms
+                        of full stack development with a keen focus on building user-centric solutions.
+                        Currently pursuing B.Tech CSE at Hindustan Institute of Technology and Science
+                        with a CGPA of 8.79.
+                    </p>
+
+                    <p class="about-text">
+                        I enjoy solving problems with clean scalable solutions. I have a genuine
+                        passion for inspiring design and love turning complex problems into simple,
+                        beautiful and intuitive designs.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-content">
+                    <h3 class="tech-title">Technologies I work with</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">Java</div>
+                        <div class="tech-item">C++</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">HTML/CSS</div>
+                        <div class="tech-item">MySQL</div>
+                        <div class="tech-item">React</div>
+                        <div class="tech-item">Node.js</div>
+                        <div class="tech-item">Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="education-container">
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-dot education-dot-1"></div>
+                        <div class="education-card">
+                            <h3 class="education-degree">B.Tech Computer Science Engineering</h3>
+                            <p class="education-institution">Hindustan Institute of Technology and Science, Chennai</p>
+                            <div class="education-details">
+                                <span class="education-period">2023 - 2027</span>
+                                <span class="education-score">CGPA: 8.79</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-dot education-dot-2"></div>
+                        <div class="education-card">
+                            <h3 class="education-degree">12th Grade</h3>
+                            <p class="education-institution">Kendriya Vidyalaya, Chennai</p>
+                            <div class="education-details">
+                                <span class="education-period">2023</span>
+                                <span class="education-score">59.8%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-dot education-dot-3"></div>
+                        <div class="education-card">
+                            <h3 class="education-degree">10th Grade</h3>
+                            <p class="education-institution">Kendriya Vidyalaya, Chennai</p>
+                            <div class="education-details">
+                                <span class="education-period">2021</span>
+                                <span class="education-score">61%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/SnapIt Site.png" alt="SnapIt Design Project">
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">SnapIt Design Project</h3>
+                        <p class="project-description">A modern web-based resume previewer with design-focused UI</p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://sriram1805.github.io/SnapIt-Design-Project-/" target="_blank"
+                                class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Sriram1805/SnapIt-Design-Project-" target="_blank"
+                                class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Resume Site.png" alt="Resume Builder Design Project">
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Resume Builder Design Project</h3>
+                        <p class="project-description">Template-based resume builder with live form-to-preview
+                            interaction</p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://sriram1805.github.io/Resume-builder-Design-Project-2/" target="_blank"
+                                class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Sriram1805/Resume-builder-Design-Project-2" target="_blank"
+                                class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/Portfolio Site.png" alt="Result Management System">
+                    </div>
+
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Site</h3>
+                        <p class="project-description">Comprehensive student result management system with admin panel
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="./index.html"
+                                target="_blank" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress skill-python" data-width="92"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress skill-java" data-width="78"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-percentage">84%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress skill-cpp" data-width="84"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">76%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress skill-javascript" data-width="76"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percentage">94%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress skill-html" data-width="94"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress skill-mysql" data-width="78"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Have a project in mind or just want to chat? I'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" name="from_name" required class="form-input" placeholder="Kumar">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="from_email" required class="form-input"
+                                placeholder="kumar18@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <input type="text" name="subject" required class="form-input" placeholder="Project Discussion">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Tell me about the project</label>
+                        <textarea rows="6" name="message" required class="form-textarea"
+                            placeholder="I'd like to discuss..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Send Message
+                    </button>
+
+                    <div id="submitMessage" class="submit-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2024 Sriram R. All rights reserved. Built with passion and lots of coffee ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
