@@ -5,7 +5,7 @@ Welcome to the source code of my **personal portfolio website**, built to showca
 
 ## 🔗 Live Preview
 
-👉 [Click here to view the live site](https://sriram1805.github.io/portfolio-Site/)
+👉 [Click here to view the live site](https://sriram1805.github.io/Portfolio-Site/)
 
 ---
 
